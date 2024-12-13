@@ -30,3 +30,5 @@ open http://localhost:3000/ in your browser
 1. Create new repository and push project to github
 
 2. Go to vercel import github repo [Deploy](https://vercel.com/new)
+
+[![Vercel Production Deployment](https://vercel.com/button)](https://octopus-eosin.vercel.app)
