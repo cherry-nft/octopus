@@ -16,11 +16,11 @@ export function Projects() {
           <div className="mx-auto justify-center items-center  flex gap-3">
             <h2 className=" z-[9999] ">
               <span className="  font-bold tracking-tight text-black text-4xl md:text-5xl lg:text-[98px] ">
-                Our Work
+                Now Serving
               </span>
             </h2>
             <h2 className=" font-bold tracking-tight text-black text-4xl md:text-5xl lg:text-[98px]">
-              Slaps
+              LA
             </h2>
           </div>
 

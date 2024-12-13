@@ -30,13 +30,13 @@ export function Hero() {
               asChild
             >
               <h1 className=" md:hidden font-black  text-5xl">
-                Update <br />
-                your <br />
-                <span className="font-brand text-6xl">brand</span>
+                Octopus <br />
+                Water <br />
+                <span className="font-brand text-6xl">Restoration</span>
               </h1>
               <h1 className="hidden  md:flex items-center font-semibold flex-col text-[12.5rem] pb-4">
-                Update <br /> your <br />
-                <span className="font-brand pt-9 sr-only">brand</span>
+                Octopus <br /> Water <br /> Restoration <br />
+                <span className="font-brand pt-9 sr-only">Octopus</span>
               </h1>
             </GradientHeading>
           </FadeIn>

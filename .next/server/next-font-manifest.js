@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/sherchaudhary/octopus/src/app/layout":["static/media/e62f5a5e1fd926f2-s.p.woff2","static/media/867bce6efedfde96-s.p.ttf"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/sherchaudhary/octopus/src/app/layout\":[\"static/media/e62f5a5e1fd926f2-s.p.woff2\",\"static/media/867bce6efedfde96-s.p.ttf\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
