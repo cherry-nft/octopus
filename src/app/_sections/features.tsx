@@ -2,44 +2,33 @@
 
 import React from "react"
 import Balancer from "react-wrap-balancer"
+import { FadeIn } from "@/components/cult/fade-in"
+import { ServicesGrid } from "./features/bento-layout"
 
-import { RevealAnimation } from "@/components/cult/reveal"
-
-import { BentoLayout } from "./features/bento-layout"
-import { OurWorkBanner } from "./features/our-work"
-
-export function Projects() {
+export function Features() {
   return (
-    <div className=" mt-4 z-10">
-      <div className="  flex flex-col items-center justify-center">
-        <div className="mx-auto max-w-lg md:max-w-4xl sm:text-center ">
-          <div className="mx-auto justify-center items-center  flex gap-3">
-            <h2 className=" z-[9999] ">
-              <span className="  font-bold tracking-tight text-black text-4xl md:text-5xl lg:text-[98px] ">
-                Now Serving
-              </span>
-            </h2>
-            <h2 className=" font-bold tracking-tight text-black text-4xl md:text-5xl lg:text-[98px]">
-              LA
-            </h2>
-          </div>
+    <div className="relative z-10 py-24 bg-white/80">
+      <div className="flex flex-col items-center justify-center">
+        <div className="mx-auto max-w-lg md:max-w-4xl text-center">
+          <h2 className="font-bold tracking-tight text-gray-900 text-4xl md:text-5xl">
+            Professional Restoration Services
+          </h2>
 
-          <RevealAnimation>
-            <p className="mt-6 px-6 md:text-lg md:leading-8 text-black/90 text-center leading-5">
+          <FadeIn>
+            <p className="mt-6 text-xl leading-8 text-gray-600">
               <Balancer>
-                Rune offers design engineering as a service. This means we can
-                solve your SaaS needs from design 👉 database. Bring the idea 💡
-                and watch as it comes to light.
+                From emergency water damage to comprehensive mold remediation, 
+                our IICRC-certified experts are available 24/7 to restore your property 
+                to its pre-damage condition.
               </Balancer>
             </p>
-          </RevealAnimation>
+          </FadeIn>
         </div>
       </div>
-      <div className="pt-12">
-        <OurWorkBanner />
-      </div>
 
-      <BentoLayout />
+      <div className="mt-16">
+        <ServicesGrid />
+      </div>
     </div>
   )
 }

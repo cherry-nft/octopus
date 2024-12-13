@@ -1,59 +1,96 @@
 import Image from "next/image"
-import clay1Img from "@/images/projects/Clay-1.png"
-import heroClay from "@/images/projects/Hero-Clay.png"
-
-import { BackgroundMedia } from "@/components/cult/background-media"
 import { FadeIn } from "@/components/cult/fade-in"
 import { GradientHeading } from "@/components/cult/gradient-heading"
-import TextAnimate from "@/components/cult/text-animate"
+import { ButtonLink } from "@/components/client/button-link"
 
 export function Hero() {
   return (
-    <div className="">
-      <div className="h-full w-full relative md:z-0">
-        <div className="hidden md:block absolute md:top-24 right-0 ">
-          <FadeIn>
-            <Image
-              src={heroClay}
-              width={2000}
-              height={2000}
-              className=" animate-spin-slow w-full h-full "
-              alt="blob image of brain"
-            />
-          </FadeIn>
-        </div>
-        <div className="absolute top-[calc(100vh-260px)]  md:top-56 z-[9999]  md:left-16 w-full md:w-auto pr-4">
-          <FadeIn>
-            <GradientHeading
-              className="flex items-end  justify-end md:justify-start  flex-col text-right md:text-left"
-              size="xxl"
-              asChild
-            >
-              <h1 className=" md:hidden font-black  text-5xl">
-                Octopus <br />
-                Water <br />
-                <span className="font-brand text-6xl">Restoration</span>
-              </h1>
-              <h1 className="hidden  md:flex items-center font-semibold flex-col text-[12.5rem] pb-4">
-                Octopus <br /> Water <br /> Restoration <br />
-                <span className="font-brand pt-9 sr-only">Octopus</span>
-              </h1>
-            </GradientHeading>
-          </FadeIn>
-        </div>
-        <div className="hidden md:block absolute top-[calc(100vh-530px)]   right-7">
-          <TextAnimate
-            className="font-brand pt-9 md:text-[12.5rem] "
-            text="octopus"
-            type="rollIn"
-          />
-        </div>
+    <div className="relative min-h-[calc(100vh-5rem)] flex items-center">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent" />
+        <Image
+          src="/wave-bg.svg"
+          alt="Wave background"
+          fill
+          className="object-cover opacity-50"
+          priority
+        />
       </div>
 
-      <div className=" md:hidden  ">
-        <FadeIn>
-          <BackgroundMedia src="/Clay-1.png" alt="blob image of brain" />
-        </FadeIn>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="max-w-3xl">
+          <FadeIn>
+            <div className="flex flex-col gap-6">
+              {/* Emergency Badge */}
+              <div className="inline-flex items-center rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-sm text-orange-600 w-fit">
+                <span className="animate-pulse mr-1.5 h-2 w-2 rounded-full bg-orange-600" />
+                24/7 Emergency Response
+              </div>
+
+              {/* Main Heading */}
+              <GradientHeading size="xxl" asChild>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+                  Restoring Your Property to Perfection
+                </h1>
+              </GradientHeading>
+
+              {/* Subheading */}
+              <p className="text-xl md:text-2xl text-gray-600">
+                24/7 Professional Water & Mold Restoration Services
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                <ButtonLink 
+                  href="tel:8187702339"
+                  variant="destructive" 
+                  size="lg"
+                  className="text-lg"
+                  icon="phone"
+                >
+                  (818) 770-2339
+                </ButtonLink>
+                <ButtonLink 
+                  href="/contact"
+                  variant="outline" 
+                  size="lg"
+                  className="text-lg group"
+                  icon="arrow"
+                >
+                  Free Estimate
+                </ButtonLink>
+              </div>
+
+              {/* Trust Badges */}
+              <div className="flex flex-wrap gap-4 mt-8">
+                <div className="flex items-center gap-2 text-sm font-medium px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg">
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  IICRC Certified
+                </div>
+                <div className="flex items-center gap-2 text-sm font-medium px-3 py-1.5 bg-green-50 text-green-700 rounded-lg">
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  HomeAdvisor Approved
+                </div>
+                <div className="flex items-center gap-2 text-sm font-medium px-3 py-1.5 bg-purple-50 text-purple-700 rounded-lg">
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  25+ Years Experience
+                </div>
+              </div>
+
+              {/* Service Areas */}
+              <div className="mt-8 text-sm text-gray-600">
+                Serving: Lancaster, Palmdale, Antelope Valley, Woodland Hills, and surrounding areas
+              </div>
+            </div>
+          </FadeIn>
+        </div>
       </div>
     </div>
   )
