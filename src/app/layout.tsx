@@ -38,9 +38,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="relative flex   mx-auto flex-col">
             <div className="top-12 absolute left-12 md:left-24 z-[9999]">
               <TextAnimate
-                className="text-4xl font-base text-black font-brand"
+                className="text-xl font-base text-black font-brand"
                 type="shiftInUp"
-                text="rune"
+                text="octopus"
               />
             </div>
             <div className="top-12 absolute right-12 md:right-24 ">

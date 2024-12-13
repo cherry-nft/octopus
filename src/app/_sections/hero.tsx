@@ -44,7 +44,7 @@ export function Hero() {
         <div className="hidden md:block absolute top-[calc(100vh-530px)]   right-7">
           <TextAnimate
             className="font-brand pt-9 md:text-[12.5rem] "
-            text="brand"
+            text="octopus"
             type="rollIn"
           />
         </div>
